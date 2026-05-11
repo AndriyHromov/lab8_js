@@ -21,13 +21,21 @@ function showSlide(i) {
 
 document.getElementById("next").addEventListener("click", () => {
     index++;
-    if(index > 2) index = 0;
+
+    if (index > 2) {
+        index = 0;
+    }
+
     showSlide(index);
 });
 
 document.getElementById("prev").addEventListener("click", () => {
     index--;
-    if(index < 0) index = 2;
+
+    if (index < 0) {
+        index = 2;
+    }
+
     showSlide(index);
 });
 
@@ -39,6 +47,10 @@ dots.forEach(dot => {
 
 setInterval(() => {
     index++;
-    if(index > 2) index = 0;
+
+    if (index > 2) {
+        index = 0;
+    }
+
     showSlide(index);
 }, 3000);
