@@ -8,50 +8,70 @@
 </head>
 <body>
 
-    <header>
-        <div class="logo">MySite</div>
+<header>
+    <div class="logo">MySite</div>
 
-        <button class="burger" id="burger">
-            ☰
-        </button>
+    <button class="burger" id="burger">
+        ☰
+    </button>
 
-        <nav id="navMenu">
-            <a href="#">🏠 Головна</a>
-            <a href="#">📷 Галерея</a>
-            <a href="#">📞 Контакти</a>
-            <a href="#">ℹ️ Про нас</a>
-        </nav>
-    </header>
+    <nav id="navMenu">
+        <a href="#home">🏠 Головна</a>
+        <a href="#gallery">📷 Галерея</a>
+        <a href="#contacts">📞 Контакти</a>
+        <a href="#about">ℹ️ Про нас</a>
+    </nav>
+</header>
 
-    <section class="carousel">
-        <div class="slides" id="slides">
-            <img src="https://placehold.co/800x400/orange/white?text=Slide+1" alt="">
-            <img src="https://placehold.co/800x400/blue/white?text=Slide+2" alt="">
-            <img src="https://placehold.co/800x400/green/white?text=Slide+3" alt="">
-        </div>
+<section id="home" class="info-section">
+    <h1>Головна</h1>
+    <p>Лабораторна робота №8</p>
+</section>
 
-        <button class="prev" id="prev">&#10094;</button>
-        <button class="next" id="next">&#10095;</button>
+<section id="gallery" class="info-section">
+    <h1>Галерея</h1>
+</section>
 
-        <div class="dots">
-            <span class="dot active" data-index="0"></span>
-            <span class="dot" data-index="1"></span>
-            <span class="dot" data-index="2"></span>
-        </div>
-    </section>
+<section class="carousel">
+    <div class="slides" id="slides">
+        <img src="https://placehold.co/800x400/orange/white?text=Slide+1">
+        <img src="https://placehold.co/800x400/blue/white?text=Slide+2">
+        <img src="https://placehold.co/800x400/green/white?text=Slide+3">
+    </div>
 
-    <section class="large-images">
-        <img src="https://placehold.co/300x200/red/white?text=Large+1">
-        <img src="https://placehold.co/300x200/purple/white?text=Large+2">
-        <img src="https://placehold.co/300x200/black/white?text=Large+3">
-    </section>
+    <button class="prev" id="prev">&#10094;</button>
+    <button class="next" id="next">&#10095;</button>
 
-    <section class="medium-images">
-        <img src="https://placehold.co/250x150/yellow/black?text=Medium+1">
-        <img src="https://placehold.co/250x150/pink/black?text=Medium+2">
-        <img src="https://placehold.co/250x150/cyan/black?text=Medium+3">
-    </section>
+    <div class="dots">
+        <span class="dot active" data-index="0"></span>
+        <span class="dot" data-index="1"></span>
+        <span class="dot" data-index="2"></span>
+    </div>
+</section>
 
-    <script src="script.js"></script>
+<section class="large-images">
+    <img src="https://placehold.co/300x200/red/white?text=Large+1">
+    <img src="https://placehold.co/300x200/purple/white?text=Large+2">
+    <img src="https://placehold.co/300x200/black/white?text=Large+3">
+</section>
+
+<section class="medium-images">
+    <img src="https://placehold.co/250x150/yellow/black?text=Medium+1">
+    <img src="https://placehold.co/250x150/pink/black?text=Medium+2">
+    <img src="https://placehold.co/250x150/cyan/black?text=Medium+3">
+</section>
+
+<section id="contacts" class="info-section">
+    <h1>Контакти</h1>
+    <p>Email: example@gmail.com</p>
+</section>
+
+<section id="about" class="info-section">
+    <h1>Про нас</h1>
+    <p>Сторінка створена для лабораторної роботи з JavaScript.</p>
+</section>
+
+<script src="script.js"></script>
+
 </body>
 </html>
